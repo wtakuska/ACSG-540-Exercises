@@ -47,4 +47,3 @@ document.write("Less than 0: " +result[0]+ '<br />');
 document.write("Equal to 0: " +result[1]+ '<br />');
 
 document.write("Greater than 0: " +result[2]+ '<br />');
-
