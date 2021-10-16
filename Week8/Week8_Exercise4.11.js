@@ -29,7 +29,7 @@ function counter () {
 
         }
         else {
-            result[2]++
+            result[2]++;
         }
     
     }
