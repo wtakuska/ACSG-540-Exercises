@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Week 9 Assignment: Wioleta Takuska-->
+<html>
+
+<head>
+    <title>Wioleta Takuska : Exercise 5.3</title>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+      var totalPrice = 0;
+
+      function addItem(cost, elementId) {
+        console.log(elementId)
+        var checkbox = document.getElementById(`${elementId}`);
+        console.log(checkbox.checked);
+        if (checkbox.checked == true) {
+            totalPrice += cost;
+        }    
+      }
+
+      function showTotalPrice() {
+        totalPrice += (totalPrice * 0.05);
+        alert("Your total cost is $" + totalPrice);
+        totalPrice = 0;
+      }
+    </script>
+</head>
+
+<body>
+    <p>Fruit for Sale: </p>
+    <form method="get" id="fruitForm" >
+        <label for="apple">Apple &nbsp;</label>
+        <input type ="checkbox" name ="apple" id="apple" onclick="addItem(0.59,'apple')" value=".59" /><br />
+        <label for="orange">Orange</label>
+        <input type ="checkbox" name ="orange" id="orange" onclick="addItem(0.49, 'orange')" value=".49" /><br />
+        <label for="banana">Banana</label>
+        <input type="checkbox" name ="banana" id="banana" onclick="addItem(0.39,'banana')" value=".39" /><br />
+        <input type="submit" value="Submit" onclick="showTotalPrice(); return false;" />
+    </form>
+</body>
+
+</html>
