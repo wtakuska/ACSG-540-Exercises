@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--Week 12 Assignment: Wioleta Takuska-->
+<html lang = "en">
+
+<head>
+    <title> Wioleta Takuska : Exercise 9.10 HTML </title>
+    <meta charset= "utf-8" />
+    <style type = "text/css">
+        td, th, table {
+            border: thin solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="Week12_Assignment.php">
+        <h1>Light Bulb Sales</h1>
+        <p>Because you need light bulbs and you need them now.</p>
+<!--Text widget for the customer's name-->
+        <table>
+            <tr>
+                <td> Buyer's Full Name: </td>
+                <td><input type="text" name="name" size="50" /></td>
+            </tr>
+        </table>
+        <br />
+<!--Light bulb table-->
+        <table>
+            <tr>
+                <th> Product </th>
+                <th> Price </th>
+                <th> Quantity </th>
+            </tr>
+            <tr>
+                <td>Four 25-watt light bulbs</td>
+                <td>$2.39</td>
+                <td><input type="text" name="four25LightBulbs" size="7"/></td>
+            </tr>
+            <tr>
+                <td>Eight 25-watt light bulbs</td>
+                <td>$4.29</td>
+                <td><input type="text" name="eight25LightBulbs" size="7"/></td>
+            </tr>
+            <tr>
+                <td>Four 25-watt long-life light bulbs</td>
+                <td>$3.95</td>
+                <td><input type="text" name="four25LongLightBulbs" size="7"/></td>
+            </tr>
+            <tr>
+            <td>Eight 25-watt long-life light bulbs</td>
+                <td>$7.49</td>
+                <td><input type="text" name="eight25LongLightBulbs" size="7"/></td>
+            </tr>
+        </table>
+<!--Radio buttons-->
+        <h2>Payment Method:</h2>
+        <p>
+            <input type="radio" name="payment" value="Visa" checked="checked" />
+            Visa<br />
+            <input type="radio" name="payment" value="Master Card" checked="checked" />
+            Master Card<br />
+            <input type="radio" name="payment" value="Discover" checked="checked" />
+            Discover<br />
+            <br />
+
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </p>
+    </form>   
+     
+</body>
+
+</html>
